@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Sans-Serif;
+}
+.hero {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  background: grey;
+}
+
+.hero-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  background: red;
+  z-index: -1;
+}
+.hero-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 90%;
+  background: white;
+  z-index: -1;
+  transform: translate(-117%, 5%);
+  border-radius: 100px;
+}
+nav {
+  background: black;
+  padding: 1em;
+}
+.nav-container {
+  width: fit-content;
+  margin-left: auto;
+}
+.nav-links {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  margin: 0 1em;
+}
+.hamburger {
+  background: white;
+  width: fit-content;
+  border-radius: 100px;
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
+}
+.hamburger-lines {
+  background: black;
+  height: 5px;
+  width: 32px;
+  margin: 2px 0;
+  pointer-events: none;
+}
+.side-menu {
+  width: 1%;
+  background: red;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  transition-property: width, opacity;
+  transition-duration: 500ms;
+}
+.side-menu-item-con {
+  display: flex;
+  flex-direction: column;
+}
+.side-menu-item-heading {
+  color: black;
+  font-weight: 900;
+}
+.side-menu-item {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+}
+.x-con {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: yellow;
+  padding: 10px;
+}
+.x-btn {
+  font-weight: 900;
+  font-size: 3vw;
+}
+.reveal {
+  opacity: 1;
+  pointer-events: all;
+  width: 80%;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.container {
+  display: flex;
+  opacity: 0.4;
+}
+.con-img {
+  max-width: 100%;
+}
+.wrapper {
+  position: relative;
+  display: block;
+}
+.con-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: black;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.wrapper-text-con {
+  margin: 0 12vw;
+  background: grey;
+  padding: 3vw;
+}
+.wrapper-text {
+  text-align: center;
+  font-weight: 900;
+  color: white;
+}
+#wrapper1, #wrapper2, #wrapper3 {
+  margin: 0 12vw 12vw 12vw;
+}
+#wrapper1::before {
+  content: "LATEST DESIGNS";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  color: white;
+  font-size: 10vw;
+  font-weight: 900;
+  z-index: 1;
+  text-align: center;
+}
+#wrapper2::before {
+  content: "LADIES CHOICE";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  color: white;
+  font-size: 10vw;
+  font-weight: 900;
+  z-index: 1;
+  text-align: center;
+}
+#wrapper3::before {
+  content: "ON SALE NOW";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  color: white;
+  font-size: 10vw;
+  font-weight: 900;
+  z-index: 1;
+  text-align: center;
+}

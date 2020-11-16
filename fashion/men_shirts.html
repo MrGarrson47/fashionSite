@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="includes/css/index.css">
+  <title>fashion</title>
+</head>
+<body onload="retrieve_cart_items();">
+  <div class="hero">
+    <a href="index.html" class="hero-text">fashion</a>
+  </div>
+  <div class="cart-con">
+      <img class="cart-img" src="includes/images/cart.png" alt="" />
+    </div>
+    <div class="cart-inner-con">
+      <div class="cart-x-btn-con">
+        <p class="cart-x-btn">X</p>
+      </div>
+      <div class="cart-total-con">
+        <p class="cart-total">cart is empty</p>
+      </div>
+      <div class="cart-item-con">
+        
+      </div>
+      <div class="cart-btns-con">
+        <p class="cart-btn-clear">CLEAR</p>
+        <p class="cart-btn-checkout">CHECKOUT</p>
+      </div>
+    </div>
+  <nav>
+    <div class="nav-container">
+      <a class="nav-links" href="Men.html">Men</a>
+      <a class="nav-links" href="Women.html">Women</a>
+      <a class="nav-links" href="Sale.html">Sale</a>
+    </div>
+  </nav>
+  <div class="wrapper">
+    <div id="hamburger" class="hamburger">
+      <div class="hamburger-lines" href=""></div>
+      <div class="hamburger-lines" href=""></div>
+      <div class="hamburger-lines" href=""></div>
+    </div>
+    <div class="side-menu">
+      <div class="x-con">
+        <p class="x-btn">
+          X
+        </p>
+      </div>
+      <div class="side-menu-item-con">
+        <p class="side-menu-item-heading">
+          Men
+        </p>
+        <a class="side-menu-item" href="men_shirts.html">Shirts</a>
+        <a class="side-menu-item" href="men_pants.html">Pants</a>
+        <a class="side-menu-item" href="men_shoes.html">Shoes</a>
+      </div>
+      <div class="side-menu-item-con">
+        <p class="side-menu-item-heading">
+          Women
+        </p>
+        <a class="side-menu-item" href="women_dress.html">Dresses</a>
+        <a class="side-menu-item" href="women_pants.html">Pants</a>
+        <a class="side-menu-item" href="women_shoes.html">Shoes</a>
+      </div>
+      <div class="side-menu-item-con">
+        <p class="side-menu-item-heading">
+          Sale
+      </p>
+      <p class="side-menu-item-heading">
+        Men
+      </p>
+      <a class="side-menu-item" href="men_sale_shirts.html">Shirts</a>
+      <a class="side-menu-item" href="men_sale_pants.html">Pants</a>
+      <a class="side-menu-item" href="men_sale_shoes.html">Shoes</a>
+      <p class="side-menu-item-heading">
+        Women
+      </p>
+      <a class="side-menu-item" href="women_sale_dress.html">Dresses</a>
+      <a class="side-menu-item" href="women_sale_pants.html">Pants</a>
+      <a class="side-menu-item" href="women_sale_shoes.html">Shoes</a>
+      </div>
+    </div>
+    <div class="filter-con">
+      <p class="filter-con-text">
+        Filter
+      </p>
+    </div>
+    <div class="filter-con-inner">
+      <div class="x-btn-con-filter">
+        <p class="x-btn-filter">
+          X
+        </p>
+      </div>
+      <div class="filter-select-con">
+        <label for="price-from" class="price-label">from</label>
+        <select name="price-from" class="price-selects" id="price-from">
+          <option value=100>R100</option>
+          <option value=200>R200</option>
+          <option value=300>R300</option>
+          <option value=400>R400</option>
+        </select>
+        <label for="price-to" class="price-label">to</label>
+        <select name="price-to" class="price-selects" id="price-to">
+          <option value=400>R400</option>
+          <option value=300>R300</option>
+          <option value=200>R200</option>
+          <option value=100>R100</option>
+        </select>
+      </div>
+      <div class="filter-brands-con">
+        <div class="brands12">
+          <label for="brand1">Brand 1</label>
+          <input type="checkbox" name="brand1" class="brand" id="brand1" value=1 checked/>
+          <label for="brand2">Brand 2</label>
+          <input type="checkbox" name="brand2" class="brand" id="brand2" value=2 checked/>
+        </div>
+        <div class="brands34">
+          <label for="brand3">Brand 3</label>
+          <input type="checkbox" name="brand3" class="brand" id="brand3" value=3 checked/>
+          <label for="brand4">Brand 4</label>
+          <input type="checkbox" name="brand4" class="brand" id="brand4" value=4 checked/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="category" id="men">
+    <div class="sub-category" id="shirts">
+      
+    </div>
+  </div>
+  <div class="wrapper-text-con">
+    <p class="wrapper-text">Men's Shirts</p>
+  </div>
+  <div class="wrapper" id="wrapper">
+    
+  </div>
+  <footer>
+    <div class="footer-con">
+      <a class="footer-item" href="#">Mr_Garrison47</a>
+    </div>
+  </footer>
+  <script src="includes/index.js"></script>
+  <script src="includes/image_directory.js"></script>
+  <script src="includes/filter-function.js"></script>
+  <script src="includes/filter.js"></script>
+</body>
+</html>
